@@ -62,6 +62,9 @@ INSTALLED_APPS += ["django_extensions"]  # noqa F405
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+INSTALLED_APPS += [
+    "email_list"
+]
 # djangorestframework
 # ------------------------------------------------------------------------------
 INSTALLED_APPS += ["rest_framework"]
