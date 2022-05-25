@@ -276,3 +276,7 @@ email_server/media/
 .env
 .envs/*
 !.envs/.local/
+
+
+### node modules
+.frontend/node_modules/
