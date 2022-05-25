@@ -62,3 +62,23 @@ INSTALLED_APPS += ["django_extensions"]  # noqa F405
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+# djangorestframework
+# ------------------------------------------------------------------------------
+INSTALLED_APPS += ["rest_framework"]
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+}
+
+# django-cors-headers
+# ------------------------------------------------------------------------------
+INSTALLED_APPS += ["corsheaders"]
+MIDDLEWARE += [
+    "corsheaders.middleware.CorsMiddleware",
+]
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
+
+CORS_ALLOW_CREDENTIALS = True
