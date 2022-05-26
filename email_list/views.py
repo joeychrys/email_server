@@ -13,4 +13,4 @@ class EmailListView(APIView):
             serializer.save()
             return Response('Success!')
         else:
-            return Response('Email already exists')
+            return Response(serializer.errors['address'][0])
